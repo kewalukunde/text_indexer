@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 #define MAX_IDX 25
 #define WORD_LENGHT 50
@@ -38,3 +41,4 @@ int display_data_base(data_base_t **,FILE *fp1);
 int search_data_base(data_base_t **,FILE *fp1,char *word);
 int insert_data_base(data_base_t **head,char *str,char *argv_file);
 
+#include "text_indexer.c"

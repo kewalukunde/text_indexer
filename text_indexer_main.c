@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <string.h>
 #include "text_indexer.h"
-#include "text_indexer.c"
-#include <unistd.h>
 
 int main(int argc,char *argv[])
 {
@@ -13,7 +9,7 @@ int main(int argc,char *argv[])
 	data_base_t *head = NULL;
 	file_i *ptr;
 
-	strcpy(b_file, "back.txt");
+	strcpy(b_file, "backup.txt");
 
 	/*create data base basic list a-z*/
 	create_data_base(&head);
